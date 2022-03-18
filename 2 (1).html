@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta http-equiv="refresh" content= "1">
+</head>
+<body>
+ <hr>
+ <H3 align=center>Formatowanie bloków</H3>
+ <hr>
+ &lt;h1&gt;Tekst stopnia 1&lt;/h1&gt;
+ <h1>Tekst stopnia 1</h1>
+ &lt;h2&gt;Tekst stopnia 2&lt;/h2&gt;
+ <h2>Tekst stopnia 2</h2>
+ <h3>Tekst stopnia 3</h3>
+ <h4>Tekst stopnia 4</h4>
+ <h5>Tekst stopnia 5</h5>
+ <h6>Tekst stopnia 6</h6>
+ <br>
+ <hr>
+ Wyrównywanie tytułów
+    &lt;hx ALIGN=CENTER &gt; &lt;/hx &gt;
+    (zamist "x" wstawiamy wartość 1-6)Przykład:
+<h2 align=center>To jest tytuł na środku strony</h2>
+<br> &lt;Hx ALIGN=RIGHTT &gt;&lt;/H2&gt
+<br> <H2 ALIGN=RIGHT>To jest tytuł justowany do prawego marginesu </H2>
+
+<br> &lt;H2 ALIGN=LEFT&gt; &lt;/H2&gt;
+<br> <H2 ALIGN=LEFT>To jest tytuł justowany do lewego marginesu </H2><br>
+<hr>
+Znacznik akapitu
+&lt;P&gt; &lt;/P&gt;
+Znacznik akapitu
+&lt;P&gt; &lt;/P&gt;
+<hr>
+Przykład:<br>
+<p>To jest nieco dłuższy akapit, który powinien zająć więcej niż jeden wiersz, aby można było poprawnie zobrazować stosowanie tego znacznika. No, chyba już. Wiersz został przeniesiony.Akapit można wyrównać do lewego marginesu (domyślne ustawienie)<br> 
+&lt;P ALIGN=LEFT&gt; &lt;/P&gt; </p> lub <br>
+&lt;P ALIGN=RIGHT&gt; &lt;/P&gt;
+<br>
+<p align=right>W ostatnich kilku-kilkunastu miesiącach łącza internetowe zapchały się do granic wytrzymałości, atakowane przez dziesiątki milionów spragnionych kontaktu ze światem użytkowników. Największe powody do narzekań ma niewątpliwie świat nauki, który utracił nagle uprzywilejowaną pozycję, gdy "sklep za żółtymi firankami" zapełnił się nagle tłumami zgłodniałych profanów.</p>
+<br>
+&lt;P ALIGN=center&gt; &lt;/P&gt;<br>Przykład:<br>
+<p align=center>W ostatnich kilku-kilkunastu miesiącach łącza internetowe zapchały się do granic wytrzymałości, atakowane przez dziesiątki milionów spragnionych kontaktu ze światem użytkowników. Największe powody do narzekań ma niewątpliwie świat nauki, który utracił nagle uprzywilejowaną pozycję, gdy "sklep za żółtymi firankami" zapełnił się nagle tłumami zgłodniałych profanów.</p>
+<br><hr>
+Znacznik końca wiersza<br>
+Znacznik końca wiersza może być obecnie opatrywany dodatkowymi parametrami: CLEAR=LEFT, CLEAR=RIGHT i CLEAR=ALL. Parametry te są wykorzystywane przy pozycjonowaniu grafiki i tekstu.
+&lt;BR CLEAR=abc&gt;
+
+Gdy zastosujemy polecenie &lt;IMG SRC="obrazek" ALIGN=LEFT&gt;, obrazek zostanie ustawiony przy lewym marginesie strony, a znajdujący się za obrazkiem tekst będzie ustawiany na tym samym poziomie.
+Użycie parametru CLEAR pozwoli nam w odpowiednim momencie zzrzucić" tekst, poniżej grafiki. Na przykład:<br>
+
+<img src="img/enter.gif" align=left>To jest strona Enter-a
+<BR clear=left>ENTER to takie pismo.<br><br><br>lub po prawej stronie np:<br><br>
+    <img src="img/enter.gif" align=right>To jest strona Enter-a
+<BR clear=right>ENTER to takie pismo.<br>
+    <br><hr>
+    Pozioma linia<br>
+    Linia może być pozbawiona cieniowania
+    &lt;HR NOSHADE&gt;
+    <HR NOSHADE> 
+    <br>
+    możemy nadać dowolną grubość
+    &lt;HR SIZE=5&gt;
+        <HR SIZE=5>
+    <br>
+    Linia może mieć określoną długość w pikselach
+    &lt;HR WIDTH=300&gt;
+    <HR WIDTH=300>
+    <br>
+    lub w procencie szerokości strony
+    &lt;HR WIDTH=50%&gt;
+    <HR WIDTH=50%>
+        <br>
+    Linia może być umieszczona na środku (domyślnie)
+    &lt;HR ALIGN=center&gt;
+    <HR ALIGN=center>
+        &lt;HR ALIGN=center SIZE=8 WIDTH=200&gt;
+    <HR ALIGN=center SIZE=8 WIDTH=200>
+    <br>
+    Może być justowana do lewego brzegu strony...
+    &lt;HR ALIGN=left&gt;
+<HR ALIGN=left>
+    &lt;HR ALIGN=left NOSHADE SIZE=4 WIDTH=300&gt;
+<HR ALIGN=left NOSHADE SIZE=4 WIDTH=300>
+    <br>
+    .. lub do prawego
+    &lt;HR ALIGN=right&gt;
+<HR ALIGN=right>
+
+    &lt;HR ALIGN=right SIZE=3 WIDTH=400&gt;
+<HR ALIGN=right SIZE=3 WIDTH=400>
+    <br>
+    Jeszcze jednym zapomnianym uprzednio uzupełnieniem jest kolor poziomej linii, potocznie zwanej separatorem.
+
+Polecenie:
+&lt;hr color="nazwa_koloru"&gt;
+<hr color="red" SIZE=14 WIDTH=300>
+<hr color="yellow" SIZE=24 WIDTH=300>
+w prosty sposób zmienia barwę separatora. Możemy oczywiście manipulować szerokością i długością linii.
+<br><br><br>
+Środkowanie<br>
+&lt;CENTER&gt; &lt;/CENTER&gt;
+<CENTER>Polecenie służy do środkowania na stronie wskazanego elementu, np. tekst lub obrazka. </CENTER>
+<br>
+<hr>
+Komentarz
+&lt;!-- ... --&gt; Polecenie pozwala wstawiać do dokumentu komentarz autora. Treść komentarza nie będzie wyświetlana na ekranie, ale stanowi dodatkową informację dla samego autora lub osoby czytającej, gdy zajrzy do źródła dokumentu. <br>
+<hr>
+Wycinek dokumentu
+&lt;DIV&gt; &lt;/DIV&gt;
+<DIV align=right> 
+Polecenie pozwala wydzielić większy blok w dokumencie, np. fragment tekstu, grafikę czy wykaz (nawet kilka różnych elementów jednocześnie), a następnie nadać mu jakiś rodzaj formatowania - środkowanie lub dosunięcie do prawego marginesu. DIV jest często stosowane przy definiowaniu stylów. Przykład użycia:</DIV> &lt;DIV align=right&gt;
+<br>
+<hr>
+Pusta przestrzeń
+&lt;SPACER&gt;
+polecenia &lt;SPACER&gt;, które wstawia pustą przestrzeń w danym miejscu strony.Polecenie zawiera kilka parametrów, które precyzują jego działanie:
+<br><br>
+TYPE=horizontal (vertical, block) określa, czy wolna przestrzeń jest wstawiana poziomo, pionowo czy też w postaci bloku.
+<br><br>
+SIZE=wartość_w_pikselach (dotyczy wersji poziomej lub pionowej)
+<br><br>
+WIDTH= wartość_w_pikselach (dotyczy bloku)
+<br><br>
+HEIGHT=wartość_w_pikselach (dotyczy bloku)
+<br><br>
+ALIGN=left (center, right) - wyrównanie bloku do lewego marginesu, środkowanie bloku lub dosunięcie bloku do prawego marginesu.
+Przykład:
+<br><br>
+&lt;SPACER TYPE="vertical" SIZE=50&gt; 
+<br><br>
+<SPACER TYPE="vertical" SIZE=50> 
+    pozwoli np. oddzielić od siebie dwa bloki tekstu o 50 punktów w pionie.
+
+&lt;SPACER TYPE="block" HEIGHT=50 WIDTH=100 ALIGN=LEFT&gt; wprowadzi pusty blok przy lewym marginesie.
+<SPACER TYPE="block" HEIGHT=50 WIDTH=100 ALIGN=LEFT> wprowadzi pusty blok przy lewym marginesie.
+    
+
+</body>
+</html>
